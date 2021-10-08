@@ -217,6 +217,7 @@
 }
 .wrapp-header .block-subscribe .graf-r {
   position: absolute;
+  top: -83px;
   right: -250px;
 }
 @media (max-width: 1200px) {
