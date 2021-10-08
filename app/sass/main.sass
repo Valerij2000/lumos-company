@@ -1,0 +1,148 @@
+/*variable */
+
+$colrFC: #FCE559
+$colrwhite: #FFFFFF
+$colrFA: #FAD264
+$colrblack: #17072b
+
+.colr-white 
+  color: $colrwhite  
+
+.wrapp-header
+  background: 80% $colrblack url(../img/bg-desk.png) no-repeat
+  object-fit: cover
+  width: 100%
+  min-height: 860px
+  opacity: 0.8
+  @media ( max-width: 1200px )
+    padding-top: 20px
+  @media ( max-width: 992px )
+    background: 80% $colrblack url(../img/bg-md.png) no-repeat
+    opacity: 0.8
+    min-height: 1306px
+  @media ( max-width: 576px )
+    background: 80% $colrblack url(../img/bg-sm.png)
+    opacity: 0.8
+    min-height: 1200px
+  .title-text
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 26px
+    color: $colrwhite
+    mix-blend-mode: normal
+    padding: 18px
+
+  .general-title
+    font-weight: bold
+    font-size: 3.2em
+    color: $colrwhite
+    mix-blend-mode: normal
+    @media ( max-width: 768px )
+      font-size: 2em
+    @media ( max-width: 564px )
+      font-size: 1.6em
+    span
+      color: $colrFC
+
+  .line
+    width: 83.15px
+    height: 0px
+    border: 1px solid $colrFC
+
+  .description-main__title
+    font-size: 24px
+    color: #FFFFFF
+
+  .block-star
+    position: relative
+    width: 285px
+    height: 125px
+    background: linear-gradient(0deg, #D3CFDC, #D3CFDC)
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25)
+    border-radius: 30px
+    padding: 27px
+    margin-top: 2.6em
+    @media ( max-width:  768px)
+      width: 80%
+      height: auto
+      margin: 1.7em auto 1.7em
+    .wrapp-cicle
+      width: 100%
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center  
+      .icon-cicle
+        position: absolute
+        top: -24px
+        padding: 8px
+        background-color: $colrFA
+        width: 44px
+        height: 44px
+        border-radius: 50%
+        img
+          width: 27px
+          height: 27px
+    p
+      font-weight: normal
+      font-size: 18px
+      line-height: 21px
+      color: #000000
+  
+  .block-time 
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 20px
+    position: relative
+    .graf-l
+      position: absolute
+      left: 66px
+      top: 20px
+      @media ( max-width: 992px )
+        left: 0
+        top: -199px
+      @media ( max-width: 768px )
+        display: none
+    p
+      color: $colrFC
+      margin: 0 10px
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 24px
+      @media  (max-width: 768px )
+        font-size: 18px
+      span
+        color: white
+
+  .btn
+    margin: 17px
+    width: 254px
+    height: 56px
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25)
+    border-radius: 30px
+  .btn-writing
+    background: linear-gradient(75.93deg, $colrFA 44.82%, $colrFC 70.67%)
+  
+  .block-subscribe
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 20px
+    position: relative
+    p
+      color: $colrwhite
+      font-weight: normal
+      font-size: 16px
+      line-height: 19px
+      margin: 10px
+      text-align: center
+      @media ( max-width: 992px )
+        text-align: left
+    .graf-r
+      position: absolute
+      right: -250px
+      @media ( max-width: 1200px )
+        display: none
