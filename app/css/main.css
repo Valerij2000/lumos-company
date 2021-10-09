@@ -67,7 +67,10 @@
   font-size: 24px;
   color: #FFFFFF;
 }
-.wrapp-header .block-star {
+.wrapp-header .cards-item {
+  margin: 8px;
+}
+.wrapp-header .cards-item .block-star {
   position: relative;
   width: 285px;
   height: 125px;
@@ -78,16 +81,16 @@
           box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
   padding: 27px;
-  margin-top: 2.6em;
+  margin-top: 1em;
 }
 @media (max-width: 768px) {
-  .wrapp-header .block-star {
+  .wrapp-header .cards-item .block-star {
     width: 80%;
     height: auto;
-    margin: 1.7em auto 1.7em;
+    margin: 0.8em auto 1.7em;
   }
 }
-.wrapp-header .block-star .wrapp-cicle {
+.wrapp-header .cards-item .block-star .wrapp-cicle {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -107,7 +110,7 @@
       -ms-flex-align: center;
           align-items: center;
 }
-.wrapp-header .block-star .wrapp-cicle .icon-cicle {
+.wrapp-header .cards-item .block-star .wrapp-cicle .icon-cicle {
   position: absolute;
   top: -24px;
   padding: 8px;
@@ -116,11 +119,11 @@
   height: 44px;
   border-radius: 50%;
 }
-.wrapp-header .block-star .wrapp-cicle .icon-cicle img {
+.wrapp-header .cards-item .block-star .wrapp-cicle .icon-cicle img {
   width: 27px;
   height: 27px;
 }
-.wrapp-header .block-star p {
+.wrapp-header .cards-item .block-star p {
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -222,6 +225,16 @@
 }
 @media (max-width: 1200px) {
   .wrapp-header .block-subscribe .graf-r {
+    display: none;
+  }
+}
+.wrapp-header .block-subscribe .mouse {
+  position: absolute;
+  cursor: pointer;
+  top: 110px;
+}
+@media (max-width: 1200px) {
+  .wrapp-header .block-subscribe .mouse {
     display: none;
   }
 }
