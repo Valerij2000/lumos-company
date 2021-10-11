@@ -4,7 +4,8 @@ $colrFC: #FCE559
 $colrwhite: #FFFFFF
 $colrFA: #FAD264
 $colrblack: #17072b
-
+$colorpink: #E130E3
+$color42: #42196D
 .colr-white 
   color: $colrwhite  
 
@@ -14,7 +15,31 @@ $colrblack: #17072b
   
 .line-prog
   @include line_ ()
-  border: 1px solid #E130E3
+  border: 1px solid $colorpink
+
+.line-yellow
+  @include line_ ()
+  border: 1px solid $colrwhite
+
+.fiolet-title
+  font-style: normal
+  font-weight: bold
+  font-size: 36px
+  line-height: 44px
+  color: #320B61
+  
+.yellow-title
+  font-style: normal
+  font-weight: bold
+  font-size: 33px
+  line-height: 44px
+  color: #FAD264
+
+h2
+  @media ( max-width: 768px )
+    font-size: 25px
+    line-height: 30px
+/*Main content styles*/
 
 .wrapp-header
   background: 80% $colrblack url(../img/bg-desk.png) no-repeat
@@ -29,8 +54,9 @@ $colrblack: #17072b
   @media ( max-width: 1200px )
     padding-top: 20px
   @media ( max-width: 992px )
-    background: 80% $colrblack url(../img/bg-md.png) no-repeat
+    background: 100% $colrblack url(../img/bg-md.png)
     opacity: 0.8
+    object-fit: fill
     min-height: 1306px
   @media ( max-width: 576px )
     background: 80% $colrblack url(../img/bg-sm.png)
@@ -133,6 +159,11 @@ $colrblack: #17072b
     border-radius: 30px
   .btn-writing
     background: linear-gradient(75.93deg, $colrFA 44.82%, $colrFC 70.67%)
+    &:hover
+      border: 4px solid $colrwhite
+  .btn-mail
+    &:hover
+      border: 4px solid $colrFA
   
   .block-subscribe
     display: flex
@@ -169,13 +200,6 @@ section
   @media (max-width: 576px )
     padding: 0px
 #programmSection
-  .program-title
-    font-style: normal
-    font-weight: bold
-    font-size: 36px
-    line-height: 44px
-    color: #320B61
-      
   .wrapper-program__card
     display: flex
     @media ( min-width: 992px )
@@ -208,7 +232,9 @@ section
         background: #320B61
         padding: 32px
         @media ( max-width: 768px )
-          padding: 10px
+          padding: 23px
+        @media ( max-width: 400px )
+          padding: 17px
         .header-text
           font-style: normal
           font-weight: bold
@@ -251,3 +277,57 @@ section
               left: 13px
               content: url(../img/round-list.svg)
 
+#cardsOffserSection
+  background: $color42
+  .wrapp-card
+    .header-logo
+      width: 100%
+      height: 238px
+      background-repeat: no-repeat
+      background-size: cover
+      object-fit: fill
+    .wrapp-content
+      background: $colrwhite
+      border-radius: 0 0 40px 40px
+      padding: 15px
+    .arrow-block
+      position: relative
+      .arrow-down
+        position: absolute
+        top: 7px
+  .title-list__card
+    margin-top: 20px
+    h3
+      font-size: 18px
+      line-height: 21px
+      color: $colrwhite    
+      font-weight: 100
+  .card-list
+    position: relative
+    li
+      color: $colrwhite
+      margin: 18px
+      list-style-type: none
+      &::before
+        position: absolute
+        left: 0
+        content: url(../img/yellow-success.svg)
+
+#rangeDaysSection
+  .graf-block
+    position: relative
+    .graf-fiolet
+      position: absolute
+      right: 90px
+      top: -32px
+      @media ( max-width: 992px )
+        display: none
+    .under-title
+      font-style: normal
+      font-weight: normal
+      font-size: 36px
+      line-height: 42px
+      margin-top: 30px
+      @media  ( max-width: 992px )
+        font-size: 24px
+        line-height: 30px

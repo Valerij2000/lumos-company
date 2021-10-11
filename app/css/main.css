@@ -9,6 +9,36 @@
   border: 1px solid #E130E3;
 }
 
+.line-yellow {
+  width: 70px;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+}
+
+.fiolet-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  color: #320B61;
+}
+
+.yellow-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 33px;
+  line-height: 44px;
+  color: #FAD264;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+/*Main content styles*/
 .wrapp-header {
   background: 80% #17072b url(../img/bg-desk.png) no-repeat;
   -o-object-fit: cover;
@@ -29,8 +59,10 @@
 }
 @media (max-width: 992px) {
   .wrapp-header {
-    background: 80% #17072b url(../img/bg-md.png) no-repeat;
+    background: 100% #17072b url(../img/bg-md.png);
     opacity: 0.8;
+    -o-object-fit: fill;
+       object-fit: fill;
     min-height: 1306px;
   }
 }
@@ -195,6 +227,12 @@
   background: -o-linear-gradient(14.07deg, #FAD264 44.82%, #FCE559 70.67%);
   background: linear-gradient(75.93deg, #FAD264 44.82%, #FCE559 70.67%);
 }
+.wrapp-header .btn-writing:hover {
+  border: 4px solid #FFFFFF;
+}
+.wrapp-header .btn-mail:hover {
+  border: 4px solid #FAD264;
+}
 .wrapp-header .block-subscribe {
   display: -webkit-box;
   display: -webkit-flex;
@@ -259,13 +297,6 @@ section {
   }
 }
 
-#programmSection .program-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 44px;
-  color: #320B61;
-}
 #programmSection .wrapper-program__card {
   display: -webkit-box;
   display: -webkit-flex;
@@ -333,7 +364,12 @@ section {
 }
 @media (max-width: 768px) {
   #programmSection .wrapper-program__card .wrapp-descr .header-wrapp_descr {
-    padding: 10px;
+    padding: 23px;
+  }
+}
+@media (max-width: 400px) {
+  #programmSection .wrapper-program__card .wrapp-descr .header-wrapp_descr {
+    padding: 17px;
   }
 }
 #programmSection .wrapper-program__card .wrapp-descr .header-wrapp_descr .header-text {
@@ -389,4 +425,77 @@ section {
   position: absolute;
   left: 13px;
   content: url(../img/round-list.svg);
+}
+
+#cardsOffserSection {
+  background: #42196D;
+}
+#cardsOffserSection .wrapp-card .header-logo {
+  width: 100%;
+  height: 238px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+#cardsOffserSection .wrapp-card .wrapp-content {
+  background: #FFFFFF;
+  border-radius: 0 0 40px 40px;
+  padding: 15px;
+}
+#cardsOffserSection .wrapp-card .arrow-block {
+  position: relative;
+}
+#cardsOffserSection .wrapp-card .arrow-block .arrow-down {
+  position: absolute;
+  top: 7px;
+}
+#cardsOffserSection .title-list__card {
+  margin-top: 20px;
+}
+#cardsOffserSection .title-list__card h3 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  font-weight: 100;
+}
+#cardsOffserSection .card-list {
+  position: relative;
+}
+#cardsOffserSection .card-list li {
+  color: #FFFFFF;
+  margin: 18px;
+  list-style-type: none;
+}
+#cardsOffserSection .card-list li::before {
+  position: absolute;
+  left: 0;
+  content: url(../img/yellow-success.svg);
+}
+
+#rangeDaysSection .graf-block {
+  position: relative;
+}
+#rangeDaysSection .graf-block .graf-fiolet {
+  position: absolute;
+  right: 90px;
+  top: -32px;
+}
+@media (max-width: 992px) {
+  #rangeDaysSection .graf-block .graf-fiolet {
+    display: none;
+  }
+}
+#rangeDaysSection .graf-block .under-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 30px;
+}
+@media (max-width: 992px) {
+  #rangeDaysSection .graf-block .under-title {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
